@@ -1,6 +1,5 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets
-from rest_framework.exceptions import PermissionDenied
 
 from .serializers import PostSerializer, GroupSerializer, CommentSerializer
 from .mixins import UpdateDestroyMixin
