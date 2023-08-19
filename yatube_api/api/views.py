@@ -16,6 +16,7 @@ class PostViewSet(UpdateDestroyMixin, viewsets.ModelViewSet):
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Group.objects.all()
+
     serializer_class = GroupSerializer
 
 
