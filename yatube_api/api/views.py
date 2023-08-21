@@ -22,6 +22,11 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
 
 class CommentViewSet(UpdateDestroyMixin, viewsets.ModelViewSet):
     serializer_class = CommentSerializer
+    
+    
+    
+    
+    
     def get_post(self):
 
         return get_object_or_404(Post, id=self.kwargs['id'])
