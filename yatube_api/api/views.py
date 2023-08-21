@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import viewsets
 
 from .serializers import PostSerializer, GroupSerializer, CommentSerializer
+
 from posts.models import Post, Group
 from .mixins import UpdateDestroyMixin
 
