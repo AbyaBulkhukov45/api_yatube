@@ -3,7 +3,7 @@ from rest_framework import viewsets
 
 from .serializers import PostSerializer, GroupSerializer, CommentSerializer
 from posts.models import Post, Group
-from mixins import UpdateDestroyMixin
+from .mixins import UpdateDestroyMixin
 
 
 class PostViewSet(UpdateDestroyMixin, viewsets.ModelViewSet):
