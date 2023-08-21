@@ -23,7 +23,7 @@ class CommentViewSet(UpdateDestroyMixin, viewsets.ModelViewSet):
     serializer_class = CommentSerializer
 
     def get_post(self):
-        return get_object_or_404(Post, pk=self.kwargs['pk'])
+        return get_object_or_404(Post, id=self.kwargs['id'])
 
     def get_queryset(self):
         return self.get_post().comments
