@@ -14,8 +14,8 @@ class PostSerializer(serializers.ModelSerializer):
     )
 
     class Meta:
-        model = '__all__'
-
+        model = Post
+        fields = '__all__'
 
 class GroupSerializer(serializers.ModelSerializer):
 
